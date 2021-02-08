@@ -1,0 +1,38 @@
+{
+  "name": "@osagai/button",
+  "version": "1.0.0",
+  "description": "osagai react button component",
+  "keywords": [
+    "button",
+    "button-group",
+    "clickable",
+    "component",
+    "osagai",
+    "react",
+    "tabbable"
+  ],
+  "sideEffects": false,
+  "author": "eintxaurtieta <endikaintxaurtieta@gmail.com>",
+  "homepage": "https://github.com/gizaki/osagai#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gizaki/osagai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gizaki/osagai/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "peerDependencies": {
+    "react": "^17.x"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
+  }
+}
