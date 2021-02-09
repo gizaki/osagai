@@ -4,4 +4,4 @@ export default {
   title: 'Components/Button',
 }
 
-export const Default = () => <Button />
+export const Default = () => <Button isFullWidth />

@@ -5,7 +5,7 @@ import { Button } from '../src/button'
 
 describe('Button', () => {
   test('renders Button component', () => {
-    render(<Button />)
+    render(<Button isFullWidth />)
 
     screen.debug()
   })

@@ -1,9 +1,13 @@
 module.exports = {
-  transform: {
-    '\\.(js|jsx)?$': ['babel-jest', { rootMode: 'upward' }],
-  },
-  testMatch: ['<rootDir>/tests/?(*.)test.{js,jsx}'], // looks for your test
-  moduleFileExtensions: ['js', 'jsx'],
-  testPathIgnorePatterns: ['/node_modules/'],
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  collectCoverageFrom: ['tests/**/*.{ts,tsx,js,jsx}'],
+  transform: { '.(ts|tsx)$': 'ts-jest/dist' },
+  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.json',
+    },
+  },
 }
