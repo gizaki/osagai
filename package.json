@@ -16,7 +16,8 @@
     "lint": "lerna run lint --no-private --stream",
     "build": "lerna run build --no-private --stream",
     "storybook": "start-storybook -p 6006",
-    "bootstrap": "lerna bootstrap --use-workspaces"
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "commitlint": "commitlint"
   },
   "peerDependencies": {
     "react": "^17.x",
