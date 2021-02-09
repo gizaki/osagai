@@ -1,12 +1,14 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 export interface ButtonProps {
   /**
    * Some docs here
    */
-  isFullWidth: boolean
+  type: 'button' | 'submit' | 'reset'
 }
 
-export const Button = forwardRef(function Button(props: ButtonProps, ref) {
-  return <button type="button">Hey from osagai</button>
-})
+export const Button = ({ type, ...rest }: ButtonProps) => (
+  <button type={type} {...rest}>
+    Hello!
+  </button>
+)
