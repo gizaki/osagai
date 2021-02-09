@@ -1,7 +1,8 @@
-import { Button } from '../src/button'
+import React from 'react'
+import { Button } from '../src'
 
 export default {
   title: 'Components/Button',
 }
 
-export const Default = () => <Button isFullWidth />
+export const Default = () => <Button type="button" />
