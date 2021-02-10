@@ -20,7 +20,7 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true
   },
-  "include": ["packages"],
+  "include": ["packages", "scripts"],
   "exclude": ["node_modules"],
   "ts-node": {
     "compilerOptions": {

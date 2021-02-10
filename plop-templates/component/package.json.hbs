@@ -1,0 +1,59 @@
+{
+  "name": "@osagai/{{componentName}}",
+  "version": "1.0.0",
+  "description": "osagai {{componentName}} component",
+  "keywords": [
+    "button",
+    "button-group",
+    "clickable",
+    "component",
+    "osagai",
+    "react",
+    "tabbable"
+  ],
+  "sideEffects": false,
+  "author": "eintxaurtieta <endikaintxaurtieta@gmail.com>",
+  "homepage": "https://github.com/gizaki/osagai#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gizaki/osagai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gizaki/osagai/issues"
+  },
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "typings": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "concurrently yarn:build:*",
+    "test": "jest --env=jsdom --passWithNoTests",
+    "lint": "concurrently yarn:lint:*",
+    "test:cov": "yarn test --coverage",
+    "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .ts,.tsx -d dist/esm --source-maps",
+    "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+    "lint:src": "eslint src --ext .ts,.tsx --config ../../.eslintrc",
+    "lint:types": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^17.x"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
+  }
+}
