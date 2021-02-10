@@ -2,13 +2,15 @@ import React from 'react'
 
 export interface ButtonProps {
   /**
-   * Some docs here
+   * Specify the type of the button
    */
   type: 'button' | 'submit' | 'reset'
 }
 
-export const Button = ({ type, ...rest }: ButtonProps) => (
-  <button type={type} {...rest}>
-    Hello!
-  </button>
-)
+export function Button({ type, ...rest }: ButtonProps) {
+  return (
+    <button type={type} {...rest}>
+      Hello from osagai!
+    </button>
+  )
+}
