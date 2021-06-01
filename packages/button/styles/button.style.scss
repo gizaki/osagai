@@ -1,0 +1,119 @@
+$prefix: 'osg';
+$button: $prefix + '-button';
+
+.#{$button} {
+  font-family: inherit;
+  padding: 0 16px 0 16px;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+  word-break: break-word;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  min-width: 36px;
+  border: none;
+
+  &.#{$button}--outlined {
+    background-color: transparent;
+    border: 1px solid #babfc3;
+    color: #202223;
+
+    &:active {
+      background-color: #f1f2f3;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      transition: none;
+      box-shadow: none;
+      border-color: #d2d5d8;
+      background-color: #fafbfb;
+      color: #8c9196;
+    }
+  }
+
+  &.#{$button}--contained {
+    background-color: hsl(27, 34%, 54%);
+    color: #ffffff;
+
+    &:hover {
+      background-color: hsl(27, 34%, 44%);
+    }
+
+    &:active {
+      background-color: hsl(27, 34%, 34%);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      transition: none;
+      box-shadow: none;
+      background-color: #f1f1f1;
+      color: #8c9196;
+    }
+  }
+
+  &.#{$button}--text {
+    background-color: transparent;
+    padding: 0 8px 0 8px;
+    color: #202223;
+
+    &:hover {
+      background-color: #f6f6f7;
+    }
+
+    &:active {
+      background-color: #d9d9dd;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      transition: none;
+      box-shadow: none;
+      color: #8c9196;
+    }
+
+    &.#{$button}--has-icon {
+      padding: 0 8px 0 8px;
+    }
+  }
+
+  &.#{$button}--icon-placement--left {
+    padding: 0 16px 0 12px;
+    flex-direction: row;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &.#{$button}--icon-placement--right {
+    padding: 0 12px 0 16px;
+    flex-direction: row-reverse;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 8px;
+    }
+  }
+
+  &.#{$button}--full-width {
+    width: 100%;
+  }
+}
