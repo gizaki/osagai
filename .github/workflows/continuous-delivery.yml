@@ -1,4 +1,4 @@
-ame: Delivery (NPM)
+name: Delivery (NPM)
 
 on:
   push:
