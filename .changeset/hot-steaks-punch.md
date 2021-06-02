@@ -1,0 +1,5 @@
+---
+'@osagai/button': minor
+---
+
+test
