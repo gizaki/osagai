@@ -31,6 +31,11 @@ export interface ButtonProps {
   isFullWidth?: boolean
 
   /**
+   * Callback when clicked
+   */
+  onClick?(): void
+
+  /**
    * Specify the type of the button
    * @default button
    */
@@ -49,8 +54,10 @@ export function Button({
   iconPlacement = 'left',
   isDisabled,
   isFullWidth,
+  onClick,
   type = 'button',
   variant = 'outlined',
+  ...props
 }: ButtonProps) {
   const buttonClasses = classnames('osg-button', {
     [`osg-button--${variant}`]: variant,
@@ -59,7 +66,13 @@ export function Button({
   })
 
   return (
-    <button type={type} className={buttonClasses} disabled={isDisabled}>
+    <button
+      type={type}
+      className={buttonClasses}
+      disabled={isDisabled}
+      onClick={onClick}
+      {...props}
+    >
       {icon && icon}
       {children}
     </button>

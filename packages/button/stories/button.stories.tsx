@@ -18,6 +18,9 @@ export default {
       },
       options: ['right', 'left'],
     },
+    onClick: {
+      action: 'clicked',
+    },
   },
 }
 
