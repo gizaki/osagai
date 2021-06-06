@@ -21,6 +21,7 @@
     "storybook": "start-storybook -p 6006 --no-manager-cache",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "commitlint": "commitlint",
+    "release": "changeset publish",
     "gen:component": "ts-node scripts/plopfile.ts"
   },
   "peerDependencies": {
