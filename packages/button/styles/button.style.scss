@@ -3,10 +3,7 @@ $button: $prefix + '-button';
 
 .#{$button} {
   font-family: inherit;
-  padding: 0 16px 0 16px;
-  font-size: 16px;
   letter-spacing: 0.8px;
-  height: 36px;
   cursor: pointer;
   border-radius: 4px;
   outline: none;
@@ -17,10 +14,95 @@ $button: $prefix + '-button';
   align-items: center;
   box-sizing: border-box;
   justify-content: center;
-  min-height: 36px;
-  min-width: 36px;
   border: none;
   text-decoration: none;
+
+  &.#{$button}--size-sm {
+    min-width: 36px;
+    min-height: 28px;
+    padding: 0 12px;
+    font-size: 16px;
+
+    &.#{$button}--icon-placement--left {
+      padding: 0 12px 0 8px;
+      flex-direction: row;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+      }
+    }
+
+    &.#{$button}--icon-placement--right {
+      padding: 0 8px 0 12px;
+      flex-direction: row-reverse;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &.#{$button}--size-md {
+    min-height: 36px;
+    min-width: 36px;
+    padding: 0 16px;
+    font-size: 16px;
+
+    &.#{$button}--icon-placement--left {
+      padding: 0 16px 0 12px;
+      flex-direction: row;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    }
+
+    &.#{$button}--icon-placement--right {
+      padding: 0 12px 0 16px;
+      flex-direction: row-reverse;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &.#{$button}--size-lg {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0 24px;
+    font-size: 20px;
+
+    &.#{$button}--icon-placement--left {
+      padding: 0 20px 0 16px;
+      flex-direction: row;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    }
+
+    &.#{$button}--icon-placement--right {
+      padding: 0 16px 0 20px;
+      flex-direction: row-reverse;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
 
   &.#{$button}--outlined {
     background-color: transparent;
@@ -93,28 +175,6 @@ $button: $prefix + '-button';
 
     &.#{$button}--has-icon {
       padding: 0 8px 0 8px;
-    }
-  }
-
-  &.#{$button}--icon-placement--left {
-    padding: 0 16px 0 12px;
-    flex-direction: row;
-
-    svg {
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
-    }
-  }
-
-  &.#{$button}--icon-placement--right {
-    padding: 0 12px 0 16px;
-    flex-direction: row-reverse;
-
-    svg {
-      width: 16px;
-      height: 16px;
-      margin-left: 8px;
     }
   }
 
