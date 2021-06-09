@@ -1,5 +1,14 @@
 # @osagai/button
 
+## 0.3.0
+
+### Minor Changes
+
+- [#6](https://github.com/gizaki/osagai/pull/6)
+  [`61ab5d7`](https://github.com/gizaki/osagai/commit/61ab5d7521671799cf38ccb6c028c7e8b75e3cdf)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - remove button
+  sizes
+
 ## 0.2.0
 
 ### Minor Changes
