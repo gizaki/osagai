@@ -18,12 +18,6 @@ export default {
       },
       options: ['right', 'left'],
     },
-    size: {
-      control: {
-        type: 'select',
-      },
-      options: ['sm', 'md', 'lg'],
-    },
     onClick: {
       action: 'clicked',
     },

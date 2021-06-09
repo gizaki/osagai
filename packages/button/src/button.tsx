@@ -34,12 +34,6 @@ export interface ButtonProps {
   onClick?(): void
 
   /**
-   * Specify the size of the button
-   * @default md
-   */
-  size?: 'sm' | 'md' | 'lg'
-
-  /**
    * Specify the type of the button
    * @default button
    */
@@ -59,13 +53,11 @@ export const Button = ({
   isDisabled,
   isFullWidth,
   onClick,
-  size = 'md',
   type = 'button',
   variant = 'outlined',
   ...props
 }: ButtonProps) => {
   const buttonClasses = classnames('osg-button', {
-    [`osg-button--size-${size}`]: size,
     [`osg-button--${variant}`]: variant,
     [`osg-button--full-width`]: isFullWidth,
     [`osg-button--${variant}--disabled`]: isDisabled,
