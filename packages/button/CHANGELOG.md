@@ -1,5 +1,14 @@
 # @osagai/button
 
+## 0.4.0
+
+### Minor Changes
+
+- [#8](https://github.com/gizaki/osagai/pull/8)
+  [`7a4c754`](https://github.com/gizaki/osagai/commit/7a4c7548f745b05d048cf335c4124f531be25998)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - disable props
+  propagation
+
 ## 0.3.0
 
 ### Minor Changes
