@@ -14,16 +14,26 @@
     "prettier/@typescript-eslint",
     "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
   ],
   "plugins": [
     "jsx-a11y",
+    "jest-dom",
     "prettier",
     "react-hooks",
     "testing-library",
     "@typescript-eslint/eslint-plugin"
   ],
   "rules": {
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
     "@typescript-eslint/ban-ts-comment": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
@@ -84,6 +94,10 @@
       "parserOptions": {
         "project": ["tsconfig.json"]
       }
+    },
+    {
+      "files": ["*.test.tsx"],
+      "extends": ["plugin:testing-library/react"]
     }
   ]
 }

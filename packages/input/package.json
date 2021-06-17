@@ -1,9 +1,9 @@
 {
-  "name": "@osagai/{{componentName}}",
-  "version": "0.1.0",
-  "description": "osagai {{componentName}} component",
+  "name": "@osagai/input",
+  "version": "0.0.0",
+  "description": "osagai input component",
   "keywords": [
-    "{{componentName}}"
+    "input"
   ],
   "sideEffects": [
     "**/*.scss"

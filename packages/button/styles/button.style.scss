@@ -1,30 +1,30 @@
+/* stylelint-disable color-no-hex */
 $prefix: 'osg';
 $button: $prefix + '-button';
 
 .#{$button} {
+  position: relative;
   font-family: inherit;
-  padding: 0 16px 0 16px;
-  font-size: 16px;
+  padding: 0 1.6rem;
+  font-size: 1.6rem;
   letter-spacing: 0.8px;
-  height: 36px;
+  height: 3.6rem;
   cursor: pointer;
   border-radius: 4px;
   outline: none;
-  position: relative;
   word-break: break-word;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
-  box-sizing: border-box;
   justify-content: center;
-  min-height: 36px;
-  min-width: 36px;
+  min-height: 3.6rem;
+  min-width: 3.6rem;
   border: none;
   text-decoration: none;
 
   &.#{$button}--outlined {
     background-color: transparent;
-    border: 1px solid #babfc3;
+    border: 0.1rem solid #babfc3;
     color: #202223;
 
     &:active {
@@ -70,7 +70,7 @@ $button: $prefix + '-button';
 
   &.#{$button}--text {
     background-color: transparent;
-    padding: 0 8px 0 8px;
+    padding: 0 0.8rem;
     color: #202223;
 
     &:hover {
@@ -92,29 +92,29 @@ $button: $prefix + '-button';
     }
 
     &.#{$button}--has-icon {
-      padding: 0 8px 0 8px;
+      padding: 0 0.8rem;
     }
   }
 
   &.#{$button}--icon-placement--left {
-    padding: 0 16px 0 12px;
+    padding: 0 1.6rem 0 1.2rem;
     flex-direction: row;
 
     svg {
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.8rem;
     }
   }
 
   &.#{$button}--icon-placement--right {
-    padding: 0 12px 0 16px;
+    padding: 0 1.2rem 0 1.6rem;
     flex-direction: row-reverse;
 
     svg {
-      width: 16px;
-      height: 16px;
-      margin-left: 8px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-left: 0.8rem;
     }
   }
 

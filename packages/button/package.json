@@ -51,6 +51,7 @@
     "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint:src": "eslint src --ext .ts,.tsx --config ../../.eslintrc",
+    "lint:style": "stylelint 'styles/*.scss'",
     "lint:types": "tsc --noEmit"
   },
   "peerDependencies": {
