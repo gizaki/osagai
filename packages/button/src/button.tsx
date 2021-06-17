@@ -55,7 +55,6 @@ export const Button = ({
   onClick,
   type = 'button',
   variant = 'outlined',
-  ...props
 }: ButtonProps) => {
   const buttonClasses = classnames('osg-button', {
     [`osg-button--${variant}`]: variant,
@@ -70,7 +69,6 @@ export const Button = ({
       className={buttonClasses}
       disabled={isDisabled}
       onClick={onClick}
-      {...props}
     >
       {icon && icon}
       {children}
