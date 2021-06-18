@@ -39,6 +39,10 @@
     "@changesets/cli": "^2.16.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
     "@shopify/stylelint-plugin": "^10.1.2",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/preset-scss": "^1.0.3",
@@ -53,7 +57,9 @@
     "@types/shelljs": "^0.8.8",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
+    "add": "^2.0.6",
     "akar-icons": "^1.2.2",
+    "autoprefixer": "^10.2.6",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
@@ -75,10 +81,14 @@
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
     "plop": "^2.7.4",
+    "postcss": "^8.3.5",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
+    "rollup": "^2.52.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1",
     "shelljs": "^0.8.4",
@@ -87,8 +97,18 @@
     "ts-jest": "^26.5.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
-    "webpack": "^5.30.0"
+    "webpack": "^5.30.0",
+    "yarn": "^1.22.10"
   },
+  "browserslist": [
+    "last 3 chrome versions",
+    "last 3 chromeandroid versions",
+    "last 3 firefox versions",
+    "last 3 opera versions",
+    "last 2 edge versions",
+    "safari >= 10",
+    "ios >= 10"
+  ],
   "stylelint": {
     "extends": [
       "@shopify/stylelint-plugin/prettier"

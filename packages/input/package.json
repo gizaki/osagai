@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "osagai input component",
   "keywords": [
-    "input"
+    "input",
+    "textarea",
+    "textbox",
+    "spinbutton"
   ],
   "sideEffects": [
     "**/*.scss"
@@ -41,8 +44,7 @@
     "test:ci": "jest --env=jsdom --passWithNoTests --runInBand",
     "lint": "concurrently yarn:lint:*",
     "test:cov": "yarn test --coverage",
-    "build:esm": "BABEL_ENV=esm babel src --root-mode upward --extensions .ts,.tsx -d dist/esm --source-maps",
-    "build:cjs": "BABEL_ENV=cjs babel src --root-mode upward --extensions .ts,.tsx -d dist/cjs --source-maps",
+    "build:files": "rollup -c ./rollup.config.js",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
     "lint:src": "eslint src --ext .ts,.tsx --config ../../.eslintrc",
     "lint:style": "stylelint 'styles/*.scss'",
@@ -50,6 +52,9 @@
   },
   "peerDependencies": {
     "react": "^17.x"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   },
   "devDependencies": {
     "react": "^17.0.1"
