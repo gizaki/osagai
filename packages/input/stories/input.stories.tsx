@@ -14,7 +14,7 @@ export default {
 export const Default = (args: any) => <Input {...args} />
 
 export const Number = () => {
-  const [value, setValue] = useState('10')
+  const [value, setValue] = useState('2')
   return (
     <div
       style={{
@@ -27,11 +27,10 @@ export const Number = () => {
         type="number"
         value={value}
         label="Quantity"
-        isDisabled
         step={1}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
           setValue(event.target.value)
-        }
+        }}
       />
     </div>
   )
@@ -52,9 +51,9 @@ export const Multiline = () => {
         value={value}
         label="Street"
         multiline={3}
-        onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
           setValue(event.target.value)
-        }
+        }}
       />
     </div>
   )

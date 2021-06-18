@@ -87,6 +87,23 @@ describe('Type number', () => {
     userEvent.click(stepDownButton)
     expect(input).toHaveValue(0)
   })
+
+  test('expect the value of the input to change according to the step property when spinners are pressed', () => {
+    const view = render(<BaseInput type="number" step={4} />)
+    const buttons = view.getAllByRole('button', {
+      hidden: true,
+    })
+    const input = view.getByRole('spinbutton') as HTMLInputElement
+    const stepUpButton = buttons[0]
+    const stepDownButton = buttons[1]
+
+    userEvent.click(stepUpButton)
+    userEvent.click(stepUpButton)
+    expect(input).toHaveValue(8)
+
+    userEvent.click(stepDownButton)
+    expect(input).toHaveValue(4)
+  })
 })
 
 describe('Multiline(Textarea)', () => {
