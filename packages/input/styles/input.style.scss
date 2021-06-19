@@ -2,8 +2,13 @@
 $prefix: 'osg';
 $input: $prefix + '-input';
 
+@function rem($value) {
+  $base-font-size: 10px;
+  @return $value / $base-font-size * 62.5 / 100 * 1rem;
+}
+
 .#{$input}-label-box {
-  margin-bottom: 0.4rem;
+  margin-bottom: rem(4px);
 
   &.#{$input}-label-box--hidden {
     // stylelint-disable declaration-no-important
@@ -19,7 +24,7 @@ $input: $prefix + '-input';
   }
 
   .#{$input}-label {
-    font-size: 1.4rem;
+    font-size: rem(14px);
   }
 }
 
@@ -32,25 +37,25 @@ $input: $prefix + '-input';
 
   .#{$input} {
     position: relative;
-    font-size: 1.6rem;
+    font-size: rem(16px);
     z-index: 20;
-    border: 0.1rem solid transparent;
-    border-radius: 0.4rem;
+    border: rem(1px) solid transparent;
+    border-radius: 4px;
     outline: none;
     caret-color: #202223;
     color: #202223;
-    padding: 0.5rem 1.2rem;
+    padding: rem(5px) rem(12px);
     text-transform: none;
     letter-spacing: normal;
     display: block;
     flex: 1 1;
     width: 100%;
     min-width: 0;
-    min-height: 3.6rem;
-    line-height: 2.4rem;
+    min-height: rem(36px);
+    line-height: rem(24px);
     margin: 0;
     background: none;
-    border-width: 0.1rem;
+    border-width: rem(1px);
     border-style: solid;
     border-color: transparent;
     border-image: initial;
@@ -61,8 +66,8 @@ $input: $prefix + '-input';
 
     &.#{$input}--multiline {
       overflow: auto;
-      padding-left: 1.2rem;
-      padding-right: 1.2rem;
+      padding-left: rem(12px);
+      padding-right: rem(12px);
       resize: none;
     }
 
@@ -102,7 +107,7 @@ $input: $prefix + '-input';
     bottom: 0;
     left: 0;
     background-color: #ffffff;
-    border: 1px solid #c9cccf;
+    border: rem(1px) solid #c9cccf;
     border-top-color: #aeb4b9;
     border-radius: 4px;
     pointer-events: none;
@@ -116,7 +121,7 @@ $input: $prefix + '-input';
   display: flex;
   align-self: stretch;
   flex-direction: column;
-  width: 2.2rem;
+  width: rem(22px);
   cursor: pointer;
 
   .#{$input}-spinner-button {
@@ -139,11 +144,11 @@ $input: $prefix + '-input';
 
     &:first-child {
       border-top-right-radius: 2px;
-      margin-bottom: 0.25rem;
+      margin-bottom: rem(2.5px);
     }
 
     &:last-child {
-      border-bottom-right-radius: 2.5px;
+      border-bottom-right-radius: rem(2.5px);
     }
 
     &:not(:first-child) {
@@ -151,8 +156,8 @@ $input: $prefix + '-input';
     }
 
     .#{$input}-spinner-icon {
-      width: 8px;
-      height: 8px;
+      width: rem(8px);
+      height: rem(8px);
     }
 
     .#{$input}-spinner-icon svg {
