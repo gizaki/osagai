@@ -1,5 +1,13 @@
 # @osagai/input
 
+## 0.3.1
+
+### Patch Changes
+
+- [#14](https://github.com/gizaki/osagai/pull/14)
+  [`2d91925`](https://github.com/gizaki/osagai/commit/2d919258768224722e7f1a8257c522267fc0a8f4)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - fix rem units
+
 ## 0.3.0
 
 ### Minor Changes
