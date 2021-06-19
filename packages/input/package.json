@@ -54,7 +54,8 @@
     "react": "^17.x"
   },
   "dependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "akar-icons": "^1.2.2"
   },
   "devDependencies": {
     "react": "^17.0.1"
