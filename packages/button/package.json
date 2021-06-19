@@ -60,6 +60,7 @@
     "classnames": "^2.3.1"
   },
   "devDependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "akar-icons": "^1.2.2"
   }
 }
