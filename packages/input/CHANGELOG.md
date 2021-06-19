@@ -1,5 +1,14 @@
 # @osagai/input
 
+## 0.3.0
+
+### Minor Changes
+
+- [#12](https://github.com/gizaki/osagai/pull/12)
+  [`e286984`](https://github.com/gizaki/osagai/commit/e286984dd42831a9e19ed4738045ffd9bf77c8c9)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - tweak build
+  settings
+
 ## 0.2.0
 
 ### Minor Changes
