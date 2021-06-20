@@ -94,6 +94,7 @@ typings/
 .DS_Store
 
 # Yarn
+.yarnrc
 yarn-error.log
 .pnp/
 .pnp.js

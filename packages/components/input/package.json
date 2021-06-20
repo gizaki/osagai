@@ -55,7 +55,8 @@
   },
   "dependencies": {
     "@osagai/scss-utils": "^0.1.0",
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "react-feather": "^2.0.9"
   },
   "devDependencies": {
     "react": "^17.0.1"
