@@ -71,7 +71,6 @@ $button: $prefix + '-button';
 
   &.#{$button}--text {
     background-color: transparent;
-    padding: 0 rem(8px);
     color: #202223;
 
     &:hover {

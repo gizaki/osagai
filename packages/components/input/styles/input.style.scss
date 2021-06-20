@@ -143,8 +143,8 @@ $input: $prefix + '-input';
     }
 
     .#{$input}-spinner-icon {
-      width: rem(6px);
-      height: rem(6px);
+      width: rem(4px);
+      height: rem(4px);
     }
 
     .#{$input}-spinner-icon svg {
