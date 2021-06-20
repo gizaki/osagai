@@ -7,19 +7,20 @@
 node_modules/
 lerna-debug.log
 npm-debug.log
-packages/*/lib
+packages/**/lib
 storybook-static
-packages/*/coverage
-packages/*/dist
-packages/*/node_modules
+packages/**/coverage
+packages/**/dist
+packages/**/node_modules
+packages/**/CHANGELOG.md
 npm-debug.log*
-packages/*/.env
+packages/**/.env
 *.log
 *.cache
 yarn-error.log
-packages/*/.rpt2_cache
-packages/*/.rts2_cache*
-packages/*/tsconfig.tsbuildinfo
+packages/**/.rpt2_cache
+packages/**/.rts2_cache*
+packages/**/tsconfig.tsbuildinfo
 tsconfig.tsbuildinfo
 .next
 .idea
@@ -93,6 +94,7 @@ typings/
 .DS_Store
 
 # Yarn
+.yarnrc
 yarn-error.log
 .pnp/
 .pnp.js

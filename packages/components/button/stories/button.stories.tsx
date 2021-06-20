@@ -1,5 +1,5 @@
 import React from 'react'
-import { Plus } from 'akar-icons'
+import { Plus } from 'react-feather'
 import { Button } from '../src'
 
 export default {

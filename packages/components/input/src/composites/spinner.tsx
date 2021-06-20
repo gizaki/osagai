@@ -1,6 +1,7 @@
+/* eslint-disable object-curly-newline */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
-import { TriangleUp, TriangleDown } from 'akar-icons'
+import { Triangle } from 'react-feather'
 import '../../styles/input.style.scss'
 
 type HandleStepFn = (step: number) => void
@@ -31,7 +32,7 @@ export function Spinner({ onChange, onClick }: SpinnerProps) {
         onClick={handleStep(1)}
       >
         <div className="osg-input-spinner-icon">
-          <TriangleUp />
+          <Triangle />
         </div>
       </div>
 
@@ -42,7 +43,7 @@ export function Spinner({ onChange, onClick }: SpinnerProps) {
         onClick={handleStep(-1)}
       >
         <div className="osg-input-spinner-icon">
-          <TriangleDown />
+          <Triangle style={{ transform: 'rotate(180deg)' }} />
         </div>
       </div>
     </div>

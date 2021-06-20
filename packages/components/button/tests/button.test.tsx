@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 
-import { Plus } from 'akar-icons'
+import { Plus } from 'react-feather'
 import { Button } from '../src'
 
 test('renders children(text) correctly', () => {
@@ -24,12 +24,10 @@ test('not calls onClick prop when clicked if is disabled', () => {
 })
 
 test('renders an icon correctly', () => {
-  const { getByTestId, getByRole } = render(
-    <Button icon={<Plus data-testid="svg" />} />,
-  )
+  render(<Button icon={<Plus data-testid="svg" />} />)
 
-  const button = getByRole('button')
-  const svg = getByTestId('svg')
+  const button = screen.getByRole('button')
+  const svg = screen.getByTestId('svg')
 
   expect(button).toContainElement(svg)
 })

@@ -1,10 +1,7 @@
 /* stylelint-disable color-no-hex */
-$prefix: 'osg';
-$button: $prefix + '-button';
+@import '~@osagai/scss-utils';
 
-@function rem($value) {
-  @return $value / 10px * 62.5 / 100 * 1rem;
-}
+$button: $prefix + '-button';
 
 .#{$button} {
   position: relative;
@@ -74,7 +71,6 @@ $button: $prefix + '-button';
 
   &.#{$button}--text {
     background-color: transparent;
-    padding: 0 rem(8px);
     color: #202223;
 
     &:hover {
@@ -93,10 +89,6 @@ $button: $prefix + '-button';
       transition: none;
       box-shadow: none;
       color: #8c9196;
-    }
-
-    &.#{$button}--has-icon {
-      padding: 0 rem(8px);
     }
   }
 
