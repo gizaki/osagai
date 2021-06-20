@@ -1,4 +1,4 @@
-import { component } from '../../rollup.config'
+import { component } from '../../../rollup.config'
 import packageJSON from './package.json'
 
 export default component({

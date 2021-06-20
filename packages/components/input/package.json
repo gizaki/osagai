@@ -1,15 +1,12 @@
 {
-  "name": "@osagai/button",
-  "version": "0.6.1",
-  "description": "osagai react button component",
+  "name": "@osagai/input",
+  "version": "0.3.1",
+  "description": "osagai input component",
   "keywords": [
-    "button",
-    "button-group",
-    "clickable",
-    "component",
-    "osagai",
-    "react",
-    "tabbable"
+    "input",
+    "textarea",
+    "textbox",
+    "spinbutton"
   ],
   "sideEffects": [
     "**/*.scss"
@@ -49,7 +46,7 @@
     "test:cov": "yarn test --coverage",
     "build:files": "rollup -c ./rollup.config.js",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "lint:src": "eslint src --ext .ts,.tsx --config ../../.eslintrc",
+    "lint:src": "eslint src --ext .ts,.tsx --config ../../../.eslintrc",
     "lint:style": "stylelint 'styles/*.scss'",
     "lint:types": "tsc --noEmit"
   },
@@ -57,10 +54,10 @@
     "react": "^17.x"
   },
   "dependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "akar-icons": "^1.2.2"
   },
   "devDependencies": {
-    "react": "^17.0.1",
-    "akar-icons": "^1.2.2"
+    "react": "^17.0.1"
   }
 }
