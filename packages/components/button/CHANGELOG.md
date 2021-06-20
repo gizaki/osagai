@@ -1,5 +1,17 @@
 # @osagai/button
 
+## 0.6.2
+
+### Patch Changes
+
+- [#21](https://github.com/gizaki/osagai/pull/21)
+  [`4914fcf`](https://github.com/gizaki/osagai/commit/4914fcf2cf2d12c8b85813eb4255e5224eaa5960)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - various fixes
+
+- Updated dependencies
+  [[`4914fcf`](https://github.com/gizaki/osagai/commit/4914fcf2cf2d12c8b85813eb4255e5224eaa5960)]:
+  - @osagai/scss-utils@0.2.0
+
 ## 0.6.1
 
 ### Patch Changes
