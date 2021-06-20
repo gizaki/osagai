@@ -1,0 +1,23 @@
+{
+  "name": "@osagai/scss-utils",
+  "version": "0.0.0",
+  "description": "osagai scss utilities",
+  "keywords": [
+    "scss",
+    "utilities"
+  ],
+  "author": "eintxaurtieta <endikaintxaurtieta@gmail.com>",
+  "homepage": "https://github.com/gizaki/osagai#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gizaki/osagai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gizaki/osagai/issues"
+  },
+  "license": "MIT",
+  "main": "./index.scss"
+}
