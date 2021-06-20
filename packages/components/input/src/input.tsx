@@ -150,7 +150,7 @@ export interface InputProps {
   value?: string
 }
 
-export const Input = ({
+export function Input({
   autoComplete,
   doesAutoFocus,
   id,
@@ -173,7 +173,7 @@ export const Input = ({
   step,
   type,
   value,
-}: InputProps) => {
+}: InputProps) {
   const [rows, setRows] = useState(
     typeof multiline === 'number' ? multiline : 1,
   )

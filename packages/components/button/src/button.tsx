@@ -46,7 +46,7 @@ export interface ButtonProps {
   variant?: 'contained' | 'outlined' | 'text'
 }
 
-export const Button = ({
+export function Button({
   children,
   icon,
   iconPlacement = 'left',
@@ -55,7 +55,7 @@ export const Button = ({
   onClick,
   type = 'button',
   variant = 'outlined',
-}: ButtonProps) => {
+}: ButtonProps) {
   const buttonClasses = classnames('osg-button', {
     [`osg-button--${variant}`]: variant,
     [`osg-button--full-width`]: isFullWidth,

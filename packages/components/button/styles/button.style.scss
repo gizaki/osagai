@@ -3,8 +3,7 @@ $prefix: 'osg';
 $button: $prefix + '-button';
 
 @function rem($value) {
-  $base-font-size: 10px;
-  @return $value / $base-font-size * 62.5 / 100 * 1rem;
+  @return $value / 10px * 62.5 / 100 * 1rem;
 }
 
 .#{$button} {
