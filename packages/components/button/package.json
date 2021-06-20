@@ -57,10 +57,10 @@
     "react": "^17.x"
   },
   "dependencies": {
+    "@osagai/scss-utils": "^0.1.0",
     "classnames": "^2.3.1"
   },
   "devDependencies": {
-    "react": "^17.0.1",
-    "akar-icons": "^1.2.2"
+    "react": "^17.0.1"
   }
 }

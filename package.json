@@ -3,7 +3,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/**"
+      "packages/components/*",
+      "packages/utilities/*"
     ]
   },
   "author": "eintxaurtieta <endikaintxaurtieta@gmail.com>",

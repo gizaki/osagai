@@ -1,5 +1,4 @@
 import React from 'react'
-import { Plus } from 'akar-icons'
 import { Button } from '../src'
 
 export default {
@@ -26,8 +25,4 @@ export default {
 
 export const Default = (args: any) => <Button {...args}>Button</Button>
 
-export const WithIcon = (args: any) => (
-  <Button {...args} icon={<Plus />}>
-    Button
-  </Button>
-)
+export const WithIcon = (args: any) => <Button {...args}>Button</Button>

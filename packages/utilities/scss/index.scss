@@ -3,3 +3,20 @@ $prefix: 'osg';
 @function rem($value) {
   @return $value / 10px * 62.5 / 100 * 1rem;
 }
+
+/**
+ * Used to hide an element visually, but keeping it accessible for
+ * accessibility tools.
+ */
+@mixin visually-hidden {
+  // stylelint-disable declaration-no-important
+  position: absolute !important;
+  top: 0;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  overflow: hidden !important;
+  height: 1px !important;
+  width: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  // stylelint-enable declaration-no-important
+}

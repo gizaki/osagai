@@ -1,25 +1,13 @@
 /* stylelint-disable color-no-hex */
-$prefix: 'osg';
-$input: $prefix + '-input';
+@import '~@osagai/scss-utils';
 
-@function rem($value) {
-  @return $value / 10px * 62.5 / 100 * 1rem;
-}
+$input: $prefix + '-input';
 
 .#{$input}-label-box {
   margin-bottom: rem(4px);
 
   &.#{$input}-label-box--hidden {
-    // stylelint-disable declaration-no-important
-    position: absolute !important;
-    top: 0;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    overflow: hidden !important;
-    height: 1px !important;
-    width: 1px !important;
-    padding: 0 !important;
-    border: 0 !important;
-    // stylelint-enable declaration-no-important
+    @include visually-hidden;
   }
 
   .#{$input}-label {
