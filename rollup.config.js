@@ -10,7 +10,7 @@ import { terser } from 'rollup-plugin-terser'
 export function component({ file, external }) {
   return [
     {
-      input: file,
+      input: './src/index.ts',
       output: [
         { format: 'cjs', dir: './dist/cjs' },
         { format: 'esm', dir: './dist/esm' },
