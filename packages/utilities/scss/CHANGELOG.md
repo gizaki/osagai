@@ -1,5 +1,13 @@
 # @osagai/scss-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- [#23](https://github.com/gizaki/osagai/pull/23)
+  [`675022e`](https://github.com/gizaki/osagai/commit/675022ee44a482428d1c3ce22967839217029c6e)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - add focus ring
+
 ## 0.2.0
 
 ### Minor Changes
