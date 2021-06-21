@@ -51,6 +51,12 @@ $input: $prefix + '-input';
       color: #9c9798;
     }
 
+    &:focus {
+      ~ .#{$input}-backdrop::after {
+        @include focus-ring;
+      }
+    }
+
     &.#{$input}--multiline {
       overflow: auto;
       padding-left: rem(12px);
@@ -58,8 +64,7 @@ $input: $prefix + '-input';
       resize: none;
     }
 
-    &:disabled,
-    &.#{$input}--disabled {
+    &:disabled {
       background: none;
       color: #8c9196;
       opacity: 1;

@@ -23,6 +23,12 @@ $button: $prefix + '-button';
   border: none;
   text-decoration: none;
 
+  &:focus {
+    &::after {
+      @include focus-ring;
+    }
+  }
+
   &.#{$button}--outlined {
     background-color: transparent;
     border: rem(1px) solid #babfc3;
