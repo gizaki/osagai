@@ -1,3 +1,4 @@
+/* stylelint-disable color-no-hex */
 $prefix: 'osg';
 
 @function rem($value) {
@@ -19,4 +20,19 @@ $prefix: 'osg';
   padding: 0 !important;
   border: 0 !important;
   // stylelint-enable declaration-no-important
+}
+
+@mixin focus-ring {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: rem(-2px);
+  right: rem(-2px);
+  bottom: rem(-2px);
+  left: rem(-2px);
+  display: block;
+  pointer-events: none;
+  box-shadow: 0 0 0 rem(2px) #458fff;
+  transition: box-shadow 0.1s ease-in-out;
+  border-radius: rem(5px);
 }

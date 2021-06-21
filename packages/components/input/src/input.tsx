@@ -189,7 +189,6 @@ export function Input({
 
   const inputClasses = classnames('osg-input', {
     [`osg-input--multiline`]: multiline,
-    [`osg-input--disabled`]: isDisabled,
   })
 
   const labelBoxClasses = classnames('osg-input-label-box', {
