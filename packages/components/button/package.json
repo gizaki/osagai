@@ -1,6 +1,6 @@
 {
   "name": "@osagai/button",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "osagai react button component",
   "keywords": [
     "button",
@@ -57,7 +57,7 @@
     "react": "^17.x"
   },
   "dependencies": {
-    "@osagai/scss-utils": "^0.3.0",
+    "@osagai/scss-utils": "^0.3.1",
     "classnames": "^2.3.1"
   },
   "devDependencies": {

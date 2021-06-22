@@ -1,5 +1,17 @@
 # @osagai/button
 
+## 0.7.1
+
+### Patch Changes
+
+- [#25](https://github.com/gizaki/osagai/pull/25)
+  [`7ef38b6`](https://github.com/gizaki/osagai/commit/7ef38b65bc376bc36055562ee4d296cf3e4a3108)
+  Thanks [@eintxaurtieta](https://github.com/eintxaurtieta)! - fix focus ring
+
+- Updated dependencies
+  [[`7ef38b6`](https://github.com/gizaki/osagai/commit/7ef38b65bc376bc36055562ee4d296cf3e4a3108)]:
+  - @osagai/scss-utils@0.3.1
+
 ## 0.7.0
 
 ### Minor Changes
