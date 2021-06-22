@@ -52,8 +52,8 @@ $input: $prefix + '-input';
     }
 
     &:focus {
-      ~ .#{$input}-backdrop::after {
-        @include focus-ring;
+      ~ .#{$input}-backdrop {
+        @include focus-ring($border-width: rem(-2px));
       }
     }
 
