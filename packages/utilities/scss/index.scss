@@ -22,17 +22,19 @@ $prefix: 'osg';
   // stylelint-enable declaration-no-important
 }
 
-@mixin focus-ring {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: rem(-2px);
-  right: rem(-2px);
-  bottom: rem(-2px);
-  left: rem(-2px);
-  display: block;
-  pointer-events: none;
-  box-shadow: 0 0 0 rem(2px) #458fff;
-  transition: box-shadow 0.1s ease-in-out;
-  border-radius: rem(5px);
+@mixin focus-ring($border-width: rem(-1px), $border-radius: rem(4px)) {
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: $border-width;
+    right: $border-width;
+    bottom: $border-width;
+    left: $border-width;
+    display: block;
+    pointer-events: none;
+    box-shadow: 0 0 0 rem(2px) #458fff;
+    transition: box-shadow 0.1s ease-in-out;
+    border-radius: $border-radius + rem(1px);
+  }
 }
